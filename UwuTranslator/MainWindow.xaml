@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UwuTranslator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Erik's Uwu Translator" Height="450" Width="800" Background="#121212">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="txtInput" GotFocus="TxtInput_OnGotFocus" LostFocus="TxtInput_OnLostFocus" Margin="10" TextChanged="TxtInput_OnTextChanged" Background="#1E1E1E" Foreground="White" Padding="4"></TextBox>
+        <TextBlock x:Name="tblkUwuOutput" Grid.Row="1" Margin="10" Background="#1E1E1E" Foreground="White" Padding="4"></TextBlock>
     </Grid>
 </Window>
